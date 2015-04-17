@@ -32,9 +32,22 @@
           <h3>
 <a id="a-drat-repo" class="anchor" href="#a-drat-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Drat repo</h3>
 
-<p>This is a drat repository. You can see a package listing <a href="https://github.com/jefferis/drattest/tree/gh-pages/src/contrib">here</a></p>
+<p>This is a drat repository. You can use it like this:</p>
+<pre><code># once only
+install.packages("drat")
+drat::addRepo("jefferis", "http://jefferis.github.io/drattest")
 
-<p>Find out more about <a href="http://cran.rstudio.com/web/packages/drat/vignettes/DratForPackageAuthors.html">drat</a>.</p>
+# now you can install packages from this drat repo as well as CRAN
+# NB it is recommended to use type='both' so that source code only packages
+# on this repo can be used as well as binary packages from 
+install.packages("cmaker", type='both')
+</code></pre>
+  
+  You can see a package listing <a href="https://github.com/jefferis/drattest/tree/gh-pages/src/contrib">here</a></p>
+
+<p>Find out more about <a href="http://cran.rstudio.com/web/packages/drat/vignettes/DratForPackageAuthors.html">setting up</a>
+  and <a href="http://cran.rstudio.com/web/packages/drat/vignettes/DratForPackageUsers.html">using</a> 
+  <a href="http://cran.rstudio.com/web/packages/drat">drat</a>.</p>
         </section>
 
         <footer>
